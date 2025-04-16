@@ -33,8 +33,8 @@ public class Lesson {
     private Status status;
 
     public enum Status {
-        BOOKED,    // Урок забронирован
-        COMPLETED  // Урок завершен
+        BOOKED,
+        COMPLETED
     }
 
 }

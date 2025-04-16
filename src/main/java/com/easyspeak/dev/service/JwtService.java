@@ -36,7 +36,7 @@ public class JwtService {
                 .compact();
     }
 
-    // Новый метод, который принимает объект User и добавляет дополнительные данные
+
     public String generateToken(User user) {
         Map<String, Object> extraClaims = new HashMap<>();
         extraClaims.put("id", user.getId());
@@ -47,7 +47,7 @@ public class JwtService {
         extraClaims.put("role", user.getRole().name());
         extraClaims.put("avatarUrl", user.getAvatarUrl());
 
-        // Создаём объект UserDetails из объекта User для совместимости с уже существующим методом
+
         UserDetails userDetails = new org.springframework.security.core.userdetails.User(
                 user.getEmail(),
                 user.getPassword(),

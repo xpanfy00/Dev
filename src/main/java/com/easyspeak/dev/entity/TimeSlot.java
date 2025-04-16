@@ -28,5 +28,5 @@ public class TimeSlot {
     private LocalDateTime endTime;
 
     @Column(name = "is_booked", nullable = false)
-    private boolean isBooked = false; // По умолчанию слот свободен
+    private boolean isBooked = false;
 }
